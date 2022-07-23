@@ -64,6 +64,7 @@ def run():
         data = {'results' : b64encode(encrypt(cmd_results, random_key)).decode()}
         return jsonify(data)
     except ValueError as e:
+        #pyAES raise ValueError in case of bad password
         print(e)
         return ''
   
