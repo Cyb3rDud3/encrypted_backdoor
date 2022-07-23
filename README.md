@@ -2,9 +2,9 @@
 Just another AES encrypted Reverse shell over http using flask and pyAEScrypt
 
 Commands:
-    [Command]: py_run $python_code Example: py_run 2+2, py_run print('\n'.join([i for i in __import__('os').listdir()]))
-    [Command]: loadByteCode $pythonByteCode Example: loadByteCode b'\xfa\x08print(1)
-    [Command]: $syscommand --> will run with default terminal. Example: whoami
+     py_run $python_code Example: py_run 2+2, py_run print('\n'.join([i for i in __import__('os').listdir()]))
+     loadByteCode $pythonByteCode Example: loadByteCode b'\xfa\x08print(1)
+     $syscommand --> will run with default terminal. Example: whoami
   
 Encryption:
   - Commands sent by the client are encrypted with Hardcoded key "secret_key" var
